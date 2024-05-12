@@ -1,0 +1,1874 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MEMEME</title>
+
+	<!--Bootstrap CSS-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<!--End-->
+
+	<!--Google Fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+	<!--End-->
+
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			position: relative;
+			margin: 0;
+			padding: 0;
+			height: 100vh;
+			width: 100vw;
+			font-family: "Merriweather", serif;
+			background-image: url("https://images.pexels.com/photos/301614/pexels-photo-301614.jpeg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: left;
+			background-attachment: fixed;
+		}
+		.container-fluid{
+			height: 100%;
+			width: 100%;
+			background-color: transparent;
+		}
+		/*side*/
+		.side{
+			background-color: transparent;
+			height: 70vh;
+			position: sticky;
+			top: 50px;
+
+		}
+		.btn_holder{
+			width: 100%;
+			margin: .5rem;
+			-webkit-box-shadow: 10px 10px 5px 0px rgba(227,225,217,0.45);
+			-moz-box-shadow: 10px 10px 5px 0px rgba(227,225,217,0.45);
+			box-shadow: 10px 10px 5px 0px rgba(227,225,217,0.45);
+		}
+		.btn_style{
+			border-radius: 10px;
+			background: #C7C8CC;
+			width: 100%;
+		}
+		.btn_style_dropdown{
+			border-radius: 10px;
+			background: #C7C8CC;
+		}
+		a{
+			color: black;
+			text-decoration: none;
+			display: inline-block;
+			width: 100%;
+
+		}
+		/*side*/
+
+		/*main*/
+		.main{
+			background: transparent;
+		}
+		.dates{
+			background-color: #F2EFE5;
+			border-radius: 10px;
+			margin: 1rem;
+			padding: .2rem;
+			font-weight: 400;
+			font-style: normal;
+			text-align: end;
+			font-size: 3vh;
+			-webkit-box-shadow: 10px 10px 5px 0px rgba(199,200,204,1);
+			-moz-box-shadow: 10px 10px 5px 0px rgba(199,200,204,1);
+			box-shadow: 10px 10px 5px 0px rgba(199,200,204,1);
+		}
+		.holder{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.text_holder{
+			border-radius: 5px;
+			width: 50%;
+			height: 100%;
+			margin: 20px;
+			padding: 10px;
+			font-size: 3vh;
+			font-weight: 900;
+			font-style: normal;
+			text-align: center;
+			-webkit-box-shadow: 10px 10px 5px 0px rgba(199,200,204,1);
+			-moz-box-shadow: 10px 10px 5px 0px rgba(199,200,204,1);
+			box-shadow: 10px 10px 5px 0px rgba(199,200,204,1);
+			background: #F2EFE5;
+		}
+		.img_holder{
+			height: 330px;
+			width: 330px;
+			margin: 20px;
+		}
+		.img_holder img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 10px;
+			-webkit-box-shadow: 10px 10px 5px 0px rgba(199,200,204,1);
+			-moz-box-shadow: 10px 10px 5px 0px rgba(199,200,204,1);
+			box-shadow: 10px 10px 5px 0px rgba(199,200,204,1);
+		}
+		.main_container_landing{
+			height: 100vh;
+			display: flex;
+			justify-content: right;
+			align-items: center;
+		}
+		.landing_content{
+			font-weight: 900;
+			font-style: normal;
+			text-align: center;
+			height: 100%;
+		}
+		.landing_content h1{
+			font-family: "Alfa Slab One", serif;
+			font-size: 15vh;
+			background-image: url("https://images.pexels.com/photos/5776631/pexels-photo-5776631.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load");
+			background-clip: text;
+			color: transparent;
+			background-position: bottom;
+			text-align: center;
+		}
+		.landing_content h2{
+			font-size: 1rem;
+			margin: 3rem 0 0 3rem; 
+		}
+		.months{
+			font-family: "Alfa Slab One", serif;
+			background-image: url("https://images.pexels.com/photos/9347250/pexels-photo-9347250.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+			background-size: cover;
+			background-position: right;
+			background-clip: text;
+			-webkit-background-clip: text;
+			color: transparent;
+			text-align: center;
+			margin: 10px; 
+			border-radius: 5px;
+		}
+		.title{
+			height: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: end;
+		}
+		.sub{
+			height: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: end;
+			padding: 5rem;
+		}
+		/*main*/
+	</style>
+
+</head>
+<body data-bs-spy="scroll" data-bs-target="#list" data-bs-smooth-scroll="true">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12 main_container_landing">
+				<div class="col-12 landing_content">
+					<div class="title">
+						<h1>
+							On the Job Training
+						</h1>
+					</div>
+					
+					<div class="sub">
+						<h2>Martin Joseph G. Bolaños</h2>
+						<h2>Bachelor of Science in Information Technology</h2>
+						<h2>486 hrs. from January to May</h2>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="row main_row">
+				<div class="col-2 side" id="list">
+					<div class="dropdown-center btn-group btn_holder">
+				  	  <button class="btn btn_style" type="button" data-bs-auto-close="outside" aria-expanded="false">
+				    	<a href="#jan">January</a>
+				  	  </button>
+					  <button type="button" class="btn_style_dropdown btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+					    <span class="visually-hidden">Toggle Dropdown</span>
+					  </button>
+					  <ul class="dropdown-menu" style="max-height: 60vh; overflow: scroll;">
+					    <li><a class="dropdown-item" href="#jan30">January 30</a></li>
+					    <li><a class="dropdown-item" href="#jan31">January 31</a></li>
+					  </ul>
+					</div>
+					<div class="dropdown-center btn-group btn_holder">
+					  <button class="btn btn_style" type="button" data-bs-auto-close="outside" aria-expanded="false">
+					    <a href="#feb">February</a>
+					  </button>
+					  <button type="button" class="btn_style_dropdown btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+					    <span class="visually-hidden">Toggle Dropdown</span>
+					  </button>
+					  <ul class="dropdown-menu" style="max-height: 60vh; overflow: scroll;">
+					    <li><a class="dropdown-item" href="#feb01">February 01</a></li>
+					    <li><a class="dropdown-item" href="#feb02">February 02</a></li>
+					    <li><a class="dropdown-item" href="#feb05">February 05</a></li>
+					    <li><a class="dropdown-item" href="#feb06">February 06</a></li>
+					    <li><a class="dropdown-item" href="#feb07">February 07</a></li>
+					    <li><a class="dropdown-item" href="#feb08">February 08</a></li>
+					    <li><a class="dropdown-item" href="#feb09">February 09</a></li>
+					    <li><a class="dropdown-item" href="#feb12">February 12</a></li>
+					    <li><a class="dropdown-item" href="#feb13">February 13</a></li>
+					    <li><a class="dropdown-item" href="#feb14">February 14</a></li>
+					    <li><a class="dropdown-item" href="#feb15">February 15</a></li>
+					    <li><a class="dropdown-item" href="#feb16">February 16</a></li>
+					    <li><a class="dropdown-item" href="#feb19">February 19</a></li>
+					    <li><a class="dropdown-item" href="#feb20">February 20</a></li>
+					    <li><a class="dropdown-item" href="#feb21">February 21</a></li>
+					    <li><a class="dropdown-item" href="#feb22">February 22</a></li>
+					    <li><a class="dropdown-item" href="#feb23">February 23</a></li>
+					    <li><a class="dropdown-item" href="#feb26">February 26</a></li>
+					    <li><a class="dropdown-item" href="#feb27">February 27</a></li>
+					    <li><a class="dropdown-item" href="#feb28">February 28</a></li>
+					    <li><a class="dropdown-item" href="#feb29">February 29</a></li>
+					  </ul>
+					</div>
+					<div class="dropdown-center btn-group btn_holder">
+					  <button class="btn btn_style" type="button" data-bs-auto-close="outside" aria-expanded="false">
+					    <a href="#mar">March</a>
+					  </button>
+					  <button type="button" class="btn_style_dropdown btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+					    <span class="visually-hidden">Toggle Dropdown</span>
+					  </button>
+					  <ul class="dropdown-menu" style="max-height: 60vh; overflow: scroll;">
+					    <li><a class="dropdown-item" href="#mar01">March 01</a></li>
+					    <li><a class="dropdown-item" href="#mar04">March 04</a></li>
+					    <li><a class="dropdown-item" href="#mar05">March 05</a></li>
+					    <li><a class="dropdown-item" href="#mar06">March 06</a></li>
+					    <li><a class="dropdown-item" href="#mar07">March 07</a></li>
+					    <li><a class="dropdown-item" href="#mar08">March 08</a></li>
+					    <li><a class="dropdown-item" href="#mar11">March 11</a></li>
+					    <li><a class="dropdown-item" href="#mar12">March 12</a></li>
+					    <li><a class="dropdown-item" href="#mar13">March 13</a></li>
+					    <li><a class="dropdown-item" href="#mar14">March 14</a></li>
+					    <li><a class="dropdown-item" href="#mar15">March 15</a></li>
+					    <li><a class="dropdown-item" href="#mar18">March 18</a></li>
+					    <li><a class="dropdown-item" href="#mar19">March 19</a></li>
+					    <li><a class="dropdown-item" href="#mar20">March 20</a></li>
+					    <li><a class="dropdown-item" href="#mar21">March 21</a></li>
+					    <li><a class="dropdown-item" href="#mar22">March 22</a></li>
+					    <li><a class="dropdown-item" href="#mar25">March 25</a></li>
+					    <li><a class="dropdown-item" href="#mar26">March 26</a></li>
+					    <li><a class="dropdown-item" href="#mar27">March 27</a></li>
+					    <li><a class="dropdown-item" href="#mar28">March 28</a></li>
+					    <li><a class="dropdown-item" href="#mar29">March 29</a></li>
+					  </ul>
+					</div>
+					<div class="dropdown-center btn-group btn_holder">
+					  <button class="btn btn_style" type="button" data-bs-auto-close="outside" aria-expanded="false">
+					   <a href="#apr">April</a>
+					  </button>
+					  <button type="button" class="btn_style_dropdown btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+					    <span class="visually-hidden">Toggle Dropdown</span>
+					  </button>
+					  <ul class="dropdown-menu" style="max-height: 60vh; overflow: scroll;">
+					    <li><a class="dropdown-item" href="#apr01">April 01</a></li>
+					    <li><a class="dropdown-item" href="#apr02">April 02</a></li>
+					    <li><a class="dropdown-item" href="#apr04">April 04</a></li>
+					    <li><a class="dropdown-item" href="#apr05">April 05</a></li>
+					    <li><a class="dropdown-item" href="#apr08">April 08</a></li>
+					    <li><a class="dropdown-item" href="#apr11">April 11</a></li>
+					    <li><a class="dropdown-item" href="#apr12">April 12</a></li>
+					    <li><a class="dropdown-item" href="#apr15">April 15</a></li>
+					    <li><a class="dropdown-item" href="#apr16">April 16</a></li>
+					    <li><a class="dropdown-item" href="#apr17">April 17</a></li>
+					    <li><a class="dropdown-item" href="#apr18">April 18</a></li>
+					    <li><a class="dropdown-item" href="#apr19">April 19</a></li>
+					    <li><a class="dropdown-item" href="#apr22">April 22</a></li>
+					    <li><a class="dropdown-item" href="#apr23">April 23</a></li>
+					    <li><a class="dropdown-item" href="#apr24">April 24</a></li>
+					    <li><a class="dropdown-item" href="#apr25">April 25</a></li>
+					    <li><a class="dropdown-item" href="#apr26">April 26</a></li>
+					    <li><a class="dropdown-item" href="#apr29">April 29</a></li>
+					    <li><a class="dropdown-item" href="#apr30">April 30</a></li>
+					  </ul>
+					</div>
+					<div class="dropdown-center btn-group btn_holder">
+					  	<button class="btn btn_style" type="button" data-bs-auto-close="outside" aria-expanded="false">
+					    <a href="#may">May</a>
+					  	</button>
+					  <button type="button" class="btn_style_dropdown btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+					    <span class="visually-hidden">Toggle Dropdown</span>
+					  </button>
+					  <ul class="dropdown-menu" style="max-height: 60vh; overflow: scroll;">
+					    <li><a class="dropdown-item" href="#may02">May 02</a></li>
+					    <li><a class="dropdown-item" href="#may03">May 03</a></li>
+					    <li><a class="dropdown-item" href="#may06">May 06</a></li>
+					    <li><a class="dropdown-item" href="#may07">May 07</a></li>
+					  </ul>
+					</div>
+				</div>
+				<div class="col-10 main">
+					<div id="jan" class="row months">
+						<h1>
+							JANUARY	
+						</h1>
+					</div>
+					<div class="row">
+						<div class="content_holder" id="jan30">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">January 30, 2024</span>
+							</div>
+							
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="January/2024_01_30_13_01_IMG_3211.JPG">
+								</div>
+
+								<div class="text_holder">
+									<p>This was the day we started. Our first task for the day was to attach stamps to several envelope which will be used to send letters to students for some responsibilities they need to fulfill.</p>
+								</div>
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>This was the day we started. Our first task for the day was to attach stamps to several envelope which will be used to send letters to students for some responsibilities they need to fulfill.</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="January/2024_01_30_13_05_IMG_3217.JPG">
+								</div>
+							</div>
+						</div>
+						
+						<div class="content_holder" id="jan31">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">January 31, 2024</span>
+							</div>
+							
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="January/2024_01_30_15_17_IMG_3218.JPG">
+								</div>
+								<div class="text_holder">
+									<p>The next day we were tasked to sort student information into their respective file organizers</p>
+								</div>
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>This is what we did for the majority of the day along with some side work whenever someone in the office needed some assistance.</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="January/2024_01_30_15_17_IMG_3219.JPG">
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--Feb-->
+					<div id="feb" class="row months">
+						<h1>
+							FEBRUARY	
+						</h1>
+					</div>
+					<div class="row">
+						<div class="content_holder" id="feb01">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">February 01, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_01_08_03_IMG_3263.JPG">
+								</div>
+
+								<div class="text_holder">
+									<p>February came, and we are still organizing student information because it was really a lot of folders that we needed to sort and also there are new forms to be inserted every hour because passing of requirements is still ongoing</p>
+								</div>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_01_08_03_IMG_3264.JPG">
+								</div>
+								<div class="text_holder">
+									<p>This went on for quite a while, it even caused the file organizers to almost burst up because of the sheets of paper that continues to increase</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_01_09_34_IMG_3268.JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="feb02">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">February 02, 2024</span>
+							</div>
+							
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_02_14_14_IMG_3301.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_02_15_58_IMG_3312.JPG">
+								</div>
+								<div class="text_holder">
+									<p>Feb. 02 Karl Millare and I were tasked to go to the ICTO to scan what we assumed to be just some documents(turns out it was alot of documents) and so we spent almost a day in the lobby/dining place/entertainment/meeting room (not sure what it was) but it was a room at the end of the hallway leading to the kitchen</p>
+								</div>
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>Scanner for a day</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_02_15_58_IMG_3314.JPG">
+								</div>
+								
+							</div>
+						</div>
+						<div class="content_holder"  id="feb05">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">February 05, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_05_09_36_IMG_3341.JPG">
+								</div>
+
+								<div class="text_holder">
+									<p>Scanner for a day ❌</p>
+									<p>Scanner for 2 days ✅. Technically its 4 days but since saturdays and sundays don't count it's just 2 days (we were planning to work the next day which is saturday but Ma'am Jazz said to just continue it on monday) </p>
+								</div>
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>Wassup</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_05_09_36_IMG_3342.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_05_09_36_IMG_3343.JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="feb06">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">February 06, 2024</span>
+							</div>
+							
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_06_13_19_IMG_3352.JPG">
+								</div>
+
+								<div class="text_holder">
+									<p>After scanning for 2 days we were back to our normal routine of sorting and inserting student forms.</p>
+								</div>
+							</div>
+							<div class="holder">
+								<div class="img_holder" style="width: 500px">
+									<img loading="lazy" src="February/2024_02_06_13_19_IMG_3353.JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="feb07">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">February 07, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: left;" src="February/2024_02_07_11_24_IMG_3376.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_07_11_25_IMG_3380.JPG">
+								</div>
+								<div class="text_holder">
+									<p>Some more file sorting and inserting while working on some excel things</p>
+								</div>
+							</div>
+							<div class="holder" style="justify-content: left;">
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_07_11_25_IMG_3378.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: left;" src="February/2024_02_07_11_25_IMG_3377.JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="feb08">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">February 08, 2024</span>
+							</div>
+							
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_08_09_27_IMG_3402.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_08_09_27_IMG_3403.JPG">
+								</div>
+								<div class="text_holder">
+									<p>Sorting and Inserting: Day 3, at this point we were already used to sorting and inserting forms to their respective file organizers that we were collecting every form that students passed without asking our seniors what scholarship group they belong to and because of that we were fast and efficient as well as have the opportunity to learn about different scholarships offered at a typical state university</p>
+								</div>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_08_09_27_IMG_3404.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_08_09_27_IMG_3405.JPG">
+								</div>
+								<div class="text_holder">
+									<p>This is me sorting the folders in alphabetical order for an easier time finding the correct folder to insert the form in</p>
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="feb09">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">February 09, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="February/feb9(1).JPG">
+								</div>
+
+								<div class="text_holder">
+									<p>Sorting and Inserting: Day 4. we figured to first accumulate the form being submitted so that we can just insert them all in one go. This is so we don't tire ourselves by going back and forth to the file room inserting them the moment a student submits a form instead we can just insert it all in one sitting</p>
+								</div>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="February/feb9.JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="feb12">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">February 12, 2024</span>
+							</div>
+							
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_12_09_04_IMG_3463.JPG">
+								</div>
+
+								<div class="text_holder">
+									<p>Was tasked to locate person who answered the clientele satisfaction surveys because we are now tasked to create a summary report which will show a rating for the service provided by the office to its clients</p>
+								</div>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: left" src="February/2024_02_12_11_23_IMG_3478.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_12_11_23_IMG_3481.JPG">
+								</div>
+								<div class="text_holder">
+									<p>We were tasked to create some tarpulin/paper hence tarpapel to cover the old Bicol University Vision which and display the new Vision for all to read and familiarize</p>
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="feb13">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">February 13, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_13_13_08_IMG_3490.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_13_13_10_IMG_3502.JPG">
+								</div>
+								<div class="text_holder">
+									<p>We were asked by one of our senior to assist in facilitating the awarding ceremony of the scholars of the BU Alumni Endowment Management Council on Foundations Inc. or BUAEMCFI</p>
+								</div>
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>It was done at the Office of the President of Bicol University and was attended by the Former BU President, the Vice President for Academic Affairs, the OSAS Dean ISPSD Director, the scholars and alumni as well</p>
+								</div>
+								<div class="img_holder" >
+									<img loading="lazy" src="February/2024_02_13_13_19_IMG_3510.JPG">
+								</div>
+								<div class="img_holder" >
+									<img loading="lazy" src="February/2024_02_13_14_43_IMG_3693.JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="feb14">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">February 14, 2024</span>
+							</div>
+							
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_14_12_36_IMG_3797.JPG">
+								</div>
+								<div class="img_holder" style="height: 300px; width: 500px;">
+									<img loading="lazy" src="February/2024_02_14_12_36_IMG_3798.JPG">
+								</div>
+								<div class="img_holder" style="height: 300px; width: 500px;">
+									<img loading="lazy" src="February/2024_02_14_12_36_IMG_3799.JPG">
+								</div>
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>Not much we've done because we were persuaded by our seniors to attend the event organized by the College of Science Student Council for Valentines Day and so we set out to go the College of Science Grounds to have a look at the events happening there. These were photos taken before heading out</p>
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="feb15">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">February 15, 2024</span>
+							</div>
+							
+							<div class="holder">
+								<div class="text_holder">
+									<p>Asked by our senior to demonstrate to her class how to create a simple website as well as some tips in creating websites with Joshua Lee as the Speaker and yours truly as the Demo Guy</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/feb15.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/feb15(1).JPG">
+								</div>
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>We also introduced them to sites like w3 school which helped us in our journey in I.T. and also some tools we've used in our curriculumn</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: right" src="February/feb15(2).JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/feb15(3).JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="feb16">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">February 16, 2024</span>
+							</div>
+							
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_15_09_29_IMG_3870.JPG">
+								</div>
+
+								<div class="text_holder">
+									<p>A different class but the same task, to demonstrate how to create a simple website and some tips on how to do it properly</p>
+								</div>
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>This time i was only facilitating</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_15_10_09_IMG_3887.JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="feb19">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">February 19, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_19_09_42_IMG_3948.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_19_09_42_IMG_3959.JPG">
+								</div>
+								<div class="text_holder">
+									<p>This time we were temporarily stationed at the OSAS and ISPSD's Office because Ma'am Jasmine was sick hence she was not able to come to work where we recieved documents from various offices within BU</p>
+								</div>
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>This was also the day Ma'am Jazz's printer stopped working, hence i was tasked to work on it and try to find the problem and possibly fix it. This is me Troubleshooting and Fixing it, and it still works to this day and we've just used it to print the list of Deans and Presidents Listers in BU</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: left" src="February/2024_02_19_15_20_IMG_3968.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_19_16_24_IMG_3972.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_19_16_24_IMG_3973.JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="feb20">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">February 20, 2024</span>
+							</div>
+							
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: left" src="February/2024_02_20_15_36_IMG_3987.JPG">
+								</div>
+								<div class="text_holder">
+									<p>Back to our normal routine, this is us eating "Snacks". We were pretty much provided with snacks every day and for lunch we used a sytem called ambagan which greatly reduced our lunch cost. Anyways, not much has happened this day so here is a photo of us eating with slightly different poses</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: left" src="February/2024_02_20_15_36_IMG_3984.JPG">
+								</div>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: left" src="February/2024_02_20_15_36_IMG_3981.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_20_15_36_IMG_3989.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: left" src="February/2024_02_20_15_36_IMG_3985.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_20_15_36_IMG_3986.JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="feb21">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">February 21, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="February/feb21(3).JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/feb21.JPG">
+								</div>
+								<div class="text_holder">
+									<p>Continuation of Sorting and Inserting: Day ? and Scanning: Day 3 OSAS Arc. Worked on the creation of the Deans Listers and Presidents Listers</p>
+								</div>
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>Also helped in distributing supplies to two offices in the SUC building</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/feb21(1).JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/feb21(2).JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="feb22">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">February 22, 2024</span>
+							</div>
+							
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_22_09_17_IMG_4326.JPG">
+								</div>
+								<div class="text_holder">
+									<p>Worked on the creation of Deans Lister and Presidents Listers</p>
+								</div>
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>Also Sorting yeah</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_22_09_17_IMG_4327.JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="feb23">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">February 23, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: right" src="February/2024_02_23_08_07_IMG_4465.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_23_08_20_IMG_4466.JPG">
+								</div>
+								<div class="text_holder">
+									<p>COG Sorting</p>
+								</div>
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>We were tasked to sort the COG's by college. We Sorted them a bit but then it was asked for by Ma'am Olga to be taken to her office so that's what we did</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: left;" src="February/2024_02_23_08_20_IMG_4468.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_23_08_07_IMG_4465.JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="feb26">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">February 26, 2024</span>
+							</div>
+							
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_26_09_18_IMG_4567.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_26_09_18_IMG_4568.JPG">
+								</div>
+								<div class="text_holder">
+									<p>New supplies roll out, you know what that means, hali na't idistribute sa mga office</p>
+								</div>
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>Scanning: Day 5??. pramiss di kami galit. kasalanan yan ng camera. We where scanning when suddenly a wild Sean Tristan called our attention</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_26_20_31_IMG_4595.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_26_20_31_IMG_4597.JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="feb27">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">February 27, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_27_10_17_IMG_4607.JPG">
+								</div>
+
+								<div class="text_holder">
+									<p>I was asked to bind a completed compilation of the Clientele Survey Documents. Tara na't magbutas ng papel or in the words of:</p>
+									<p>Ma'am Jas: lobotan(Daraga Dialect for butasan) mo ni, pantayon mo ha</p>
+									<p>Me: Oki</p>
+									<p>p.s. Ma'am Jas = Ma'am Jasmine while Ma'am Jazz = Ma'am Jazzlyn</p>
+								</div>
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>POV: ikaw si shem na gumagawa ng cover, habang nasa background ako...... naga lobot</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_27_10_30_IMG_4611.JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="feb28">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">February 28, 2024</span>
+							</div>
+							
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_28_08_42_IMG_4627.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_28_08_42_IMG_4628.JPG">
+								</div>
+								<div class="text_holder">
+									<p>Day 2 of Binding. This was what i did for the majority of the day</p>
+								</div>
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>Cookerist</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_28_16_17_IMG_4631.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_28_16_23_IMG_4636.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_28_16_17_IMG_4632.JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="feb29">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">February 29, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="February/feb29.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/feb29(1).JPG">
+								</div>
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>More Scanning of Documents. Day: 6? 7?</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--Mar-->
+					<div id="mar" class="row months">
+						<h1>
+							MARCH	
+						</h1>
+					</div>
+					<div class="row">
+						<div class="content_holder"  id="mar01">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">March 01, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="March/2024_03_01_09_14_IMG_4728.JPG">
+								</div>
+								<div class="text_holder">
+									<p>Creation of an intern card, a project we the OSAS OJT pips decided to make. Here we see the cutting process</p>
+								</div>
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>More Cutting</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="March/2024_03_01_09_14_IMG_4729.JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="mar04">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">March 04, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_22_16_41_IMG_4346.JPG">
+								</div>
+								<div class="text_holder">
+									<p>Sorting of Student Requirements for the Month of March</p>
+								</div>
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>Karl and I while Shem is sorting. Tamang nood lang muna</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_22_14_26_IMG_4342.JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="mar05">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">March 05, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="March/2024_03_05_13_54_IMG_4816.JPG">
+								</div>
+								<div class="text_holder">
+									<p>Ako muna maglalako, kasi iinterview pa namin si tiya elna para sa happy birthday video ni Sir President Baby</p>
+								</div>
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>Lunch Break Moments</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="March/2024_03_08_09_34_IMG_4879.JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="mar06">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">March 06, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="March/mar06.JPG">
+								</div>
+								<div class="text_holder">
+									<p>Early Morning.... and someone's still asleep</p>
+								</div>
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>Quick Work</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: left" src="March/mar04(5).JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="mar07">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">March 07, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_22_11_33_IMG_4330.JPG">
+								</div>
+								<div class="text_holder">
+									<p>This is me taking random photo's or my workmates</p>
+									<p>Shem Trujillo guys</p>
+								</div>
+							</div>
+							<div class="holder">
+								<div class="text_holder" style="width: 300px">
+									<p>Here we see Sean Tristan Espinosa</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_22_11_33_IMG_4331.JPG">
+								</div>
+								<div class="text_holder" style="width: 300px">
+									<p>This is Karl Millare</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_22_11_33_IMG_4332.JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="mar08">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">March 08, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="March/2024_03_08_14_47_IMG_4909.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: left" src="March/2024_03_08_15_58_IMG_4919.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="March/2024_03_08_14_51_IMG_4914.JPG">
+								</div>
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>This the day a 6:00 a.m. to 6:00 p.m. brownout was scheduled hence we were not able to work with the things we need to work on but i was tasked by sir Daves to create a misalet as well as to make powerpoint presentation for the order of the mass to be displayed during the mass</p>
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="mar11">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">March 11, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_23_10_57_IMG_4480.JPG">
+								</div>
+								<div class="text_holder">
+									<p>
+										More scanning of documents
+									</p>
+								</div>
+								
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>
+										Also some digital works like reviewing the Deans and Presidents List to make sure that it is correct
+									</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="February/2024_02_23_10_57_IMG_4487.JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="mar12">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">March 12, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="March/2024_03_13_15_50_IMG_5021.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="March/2024_03_13_15_50_IMG_5022.JPG">
+								</div>
+								
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>
+										Sorting and checking of scholars documents
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="mar13">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">March 13, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="March/2024_03_13_10_55_IMG_5019.JPG">
+								</div>
+								<div class="text_holder">
+									<p>
+										Here Shem and I scanning some more documents. If i remember correctly we are scanning vouchers
+									</p>
+								</div>
+								
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="March/2024_03_13_10_55_IMG_5018.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="March/2024_03_13_10_55_IMG_5016.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="March/2024_03_13_10_55_IMG_5017.JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="mar14">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">March 14, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: right" src="March/mar14.JPG">
+								</div>
+								<div class="text_holder">
+									<p>
+										So this is what it feels like to have a table full of pending work
+									</p>
+								</div>
+								
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>
+										Don't mind the camera angle, i was just trying to do something
+									</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="March/mar14(1).JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="mar15">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">March 15, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: right" src="March/mar15.JPG">
+								</div>
+								<div class="text_holder">
+									<p>
+										March 15 and we are still doing things we've been doing since the start, which is somewhat of a good thing because we are being trained to work in a typical office which we did not experienced in our curriculumn
+									</p>
+								</div>
+								
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>
+										Felt Crazy might stick a note on my forehead and then some
+									</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: left;" src="March/mar15(1).JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="mar18">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">March 18, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: right" src="March/mar18.JPG">
+								</div>
+								<div class="text_holder">
+									<p>
+										Karl and I was also asked to scanned more documents given to us by one of our senior, Ma'am Angie.
+									</p>
+								</div>
+								
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>
+										More sorting and inserting of documents and also some inventory work. this is us in the Dean's Office.
+									</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: left;" src="March/2024_03_18_17_08_IMG_5097.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: left;" src="March/2024_03_18_17_08_IMG_5099.JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="mar19">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">March 19, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: right" src="March/march19.JPG">
+								</div>
+								<div class="text_holder">
+									<p>
+										More Documents to scan, a bunch of vouchers
+									</p>
+								</div>
+								
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: left;" src="March/march19(2).JPG">
+								</div>
+								<div class="text_holder">
+									<p>
+										Feast your eyes on the almighty scanner, which save us the trip to ICTO under the blazing hot sun
+									</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: left;" src="March/march19(1).JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="mar20">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">March 20, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: right" src="March/2024_03_20_11_40_IMG_5126.JPG">
+								</div>
+								<div class="text_holder">
+									<p>
+										Routine work of scanning, sorting, inserting, inventory and some side work asked by our seniors, that is all it is and we like it, because we are getting trained, so here we are having lunch and also dessert.
+									</p>
+								</div>
+								
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: left;" src="March/2024_03_20_11_42_IMG_5129.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: left;" src="March/2024_03_20_11_55_IMG_5130.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: left;" src="March/2024_03_20_11_41_IMG_5127.JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="mar21">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">March 21, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: left" src="March/march21(1).JPG">
+								</div>
+								<div class="text_holder">
+									<p>
+										Here we are working on the updates that we have to make on the PL and DL documents. I also scanned some USC Election documents
+									</p>
+								</div>
+								
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: left;" src="March/march21(2).JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: left;" src="March/march21.JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="mar22">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">March 22, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: right" src="March/mar22.JPG">
+								</div>
+								<div class="text_holder">
+									<p>
+										Behold a sleepy workmate. Tinamaan ng betsin
+									</p>
+								</div>
+								
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>
+										Nothing much has happened this day, we just worked like normal and do what we always do, which is to scan, sort and insert documents so here is a photo of a sleeping karl instead.
+									</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: left;" src="March/mar22.JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="mar25">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">March 25, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: right" src="March/mar04(2).JPG">
+								</div>
+								<div class="text_holder">
+									<p>
+										More work regrading the PL and DL document
+									</p>
+								</div>
+								
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>
+										This is Day 3 of working on the PL and DL documents
+									</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: left;" src="March/2024_03_26_06_09_IMG_5205.JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="mar26">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">March 26, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: right" src="March/mar26.JPG">
+								</div>
+								<div class="text_holder">
+									<p>
+										March 26 and tommorrow is a half day so I am planning to just not go to work tommorrow because I am planning to go home to Rapu-Rapu to spend the holy week there.
+									</p>
+								</div>
+								
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>
+										This is me contemplating
+									</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: left;" src="March/mar26(1).JPG">
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--Apr-->
+					<div id="apr" class="row months">
+						<h1>
+							APRIL	
+						</h1>
+					</div>
+					<div class="row">
+						<div class="content_holder"  id="apr01">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">April 01, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: right" src="April/apr01.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: right" src="April/apr01(1).JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: right" src="April/apr01(2).JPG">
+								</div>
+								<div class="text_holder">
+									<p>
+										This is me still on the island and on the ship to legazpi and its monday, which means i will not be present for the first half of the day
+									</p>
+								</div>
+								
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>
+										Mayon Volcano sa Naga
+									</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: right" src="April/apr01(3).JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="apr02">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">April 02, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: right" src="April/apr02.JPG">
+								</div>
+								<div class="text_holder">
+									<p>
+										Checking of PL and DL documents to prepare for the printing process
+									</p>
+								</div>
+								
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>
+										Focus sa work para hindi magkamali
+									</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: right" src="April/apr02(1).JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="apr04">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">April 04, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: left" src="April/apr04(1).JPG">
+								</div>
+								<div class="text_holder">
+									<p>
+										Checking of PL and DL documents to prepare for the printing process and also
+									</p>
+								</div>
+								
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>
+										This is where we have lunch, a dinning room inside the office, as for food we just contribute to build up budget and then buy food we can cook.
+									</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: left" src="April/apr04.JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="apr05">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">April 05, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: right" src="April/2024_04_05_11_22_IMG_5485.JPG">
+								</div>
+								<div class="text_holder">
+									<p>
+										Day ???: Checking of PL and DL documents to prepare for the printing process
+									</p>
+								</div>
+								
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>
+										At this point we are just really used to the atmosphere of the office. we are also able to do more that just what our seniors asked us to do because we realize that they are just gonna do this later on so why not do it now.
+									</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: right" src="April/apr05.JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="apr08">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">April 08, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: right" src="April/2024_04_08_14_21_IMG_5570.JPG">
+								</div>
+								<div class="text_holder">
+									<p>
+										This is day 1 of accepting student submissions for the TDP-SUC program. I was tasked by Ma'am Angie to acknowledge students who were going to submit their requirements.
+									</p>
+								</div>
+								
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>
+										I also did some document scanning.
+									</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: right" src="April/2024_04_08_14_21_IMG_5571.JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="apr11">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">April 11, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: right" src="April/2024_04_12_15_07_IMG_5662.PNG">
+								</div>
+								<div class="text_holder">
+									<p>
+										Day 2 of accepting requirements
+									</p>
+								</div>
+								
+							</div>
+						</div>
+						<div class="content_holder"  id="apr12">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">April 12, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: right" src="April/2024_04_12_15_32_IMG_5664.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: left" src="April/2024_04_12_15_33_IMG_5678.JPG">
+								</div>
+								<div class="text_holder">
+									<p>
+										Day 3
+									</p>
+								</div>
+								
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>
+										The Number of student submitting requirements are decreasing so it is not as hectic as the 2nd day
+									</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: left" src="April/2024_04_12_15_33_IMG_5669.JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="apr15">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">April 15, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>
+										Day 4. TDP-SUC awaiting submissions Week 2
+									</p>
+								</div>
+								
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>
+										Some students are still not submitting their requirements even though the deadline has already passed.
+									</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: right" src="April/2024_04_12_15_37_IMG_5705.JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="apr16">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">April 16, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>
+										Day 5
+									</p>
+								</div>
+								
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>
+										Another slow day of receiving student submissions, hence while I'm in this table near the scanner, i have been scanning documents while waiting
+									</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: right" src="April/2024_04_12_16_32_IMG_5667.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" style="object-position: right" src="April/2024_04_16_08_51_IMG_6510.JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="apr17">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">April 17, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>
+										Day 6. More scanning along with acknowledging students who've come to submit their requirements.
+									</p>
+								</div>
+								
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" style="width: 600px;" src="April/2024_04_17_10_25_IMG_5832.JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="apr18">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">April 18, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>
+										Day 7, while waiting for more work (TDP-SUC submissions, scanning etc.) we took the liberty of taking a picture before the faux Torch displayed the ground floor of the SUC Building
+									</p>
+								</div>
+								
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" style="width: 600px;" src="April/apr19(3).JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="apr19">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">April 19, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="April/apr19.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="April/apr19(1).JPG">
+								</div>
+								<div class="text_holder">
+									<p>
+										Day 8, still not finished with the TDP-SUC submissions
+									</p>
+								</div>
+								
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>
+										Because of a relatively free day for us OJT's we took a photo op with the art displayed at the ground floor of the SUC building. Sheam was also asked to take the photo of the BU Band, look how happy he is.
+									</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="April/apr19(2).JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="apr22">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">April 22, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="April/apr19.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="April/apr19(1).JPG">
+								</div>
+								<div class="text_holder">
+									<p>
+										Day 8, still not finished with the TDP-SUC submissions
+									</p>
+								</div>
+								
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>
+										Because of a relatively free day for us OJT's we took a photo op with the art displayed at the ground floor of the SUC building. Sheam was also asked to take the photo of the BU Band, look how happy he is.
+									</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="April/apr19(2).JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="apr23">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">April 23, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="April/apr19.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="April/apr19(1).JPG">
+								</div>
+								<div class="text_holder">
+									<p>
+										Day 8, still not finished with the TDP-SUC submissions
+									</p>
+								</div>
+								
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>
+										Because of a relatively free day for us OJT's we took a photo op with the art displayed at the ground floor of the SUC building. Sheam was also asked to take the photo of the BU Band, look how happy he is.
+									</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="April/apr19(2).JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="apr24">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">April 24, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="April/apr19.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="April/apr19(1).JPG">
+								</div>
+								<div class="text_holder">
+									<p>
+										Day 8, still not finished with the TDP-SUC submissions
+									</p>
+								</div>
+								
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>
+										Because of a relatively free day for us OJT's we took a photo op with the art displayed at the ground floor of the SUC building. Sheam was also asked to take the photo of the BU Band, look how happy he is.
+									</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="April/apr19(2).JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="apr25">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">April 25, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="April/apr19.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="April/apr19(1).JPG">
+								</div>
+								<div class="text_holder">
+									<p>
+										Day 8, still not finished with the TDP-SUC submissions
+									</p>
+								</div>
+								
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>
+										Because of a relatively free day for us OJT's we took a photo op with the art displayed at the ground floor of the SUC building. Sheam was also asked to take the photo of the BU Band, look how happy he is.
+									</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="April/apr19(2).JPG">
+								</div>
+							</div>
+						</div>
+						<div class="content_holder"  id="apr26">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">April 26, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="img_holder">
+									<img loading="lazy" src="April/apr19.JPG">
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="April/apr19(1).JPG">
+								</div>
+								<div class="text_holder">
+									<p>
+										Day 8, still not finished with the TDP-SUC submissions
+									</p>
+								</div>
+								
+							</div>
+							<div class="holder">
+								<div class="text_holder">
+									<p>
+										Because of a relatively free day for us OJT's we took a photo op with the art displayed at the ground floor of the SUC building. Sheam was also asked to take the photo of the BU Band, look how happy he is.
+									</p>
+								</div>
+								<div class="img_holder">
+									<img loading="lazy" src="April/apr19(2).JPG">
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--May-->
+					<div class="row months">
+						<div id="may">
+							<h1>
+								MAY	
+							</h1>
+						</div>
+						
+					</div>
+					<div class="row">
+						<div class="content_holder"  id="apr26">
+							<div class="date_holder list-group" style="width: 100%; text-align: center;">
+								<span class="list-group-item dates">May 02, 2024</span>
+							</div>
+							<div class="holder">
+								<div class="col-12 landing_content">
+									<div class="title">
+										<h1>
+											Coming Soon
+										</h1>
+									</div>
+									
+									<div class="sub">
+										<h2>All Rights Reserve. 2024</h2>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!--Bootstrap JS-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<!--End-->
+
+</body>
+</html>
